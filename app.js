@@ -38,7 +38,7 @@ function sortear() {
   resultado.innerHTML = ` <label class="texto__paragrafo">Números sorteados: ${sorteados} </label> `;
 
   alterarStatusBotao();
-  document.getElementById('btn-reiniciar').removeAttribute('disabled');
+  document.getElementById("btn-reiniciar").removeAttribute("disabled");
 }
 
 function obterNumeroAleatorio(min, max) {
@@ -50,6 +50,9 @@ function alterarStatusBotao() {
   if (botao.classList.contains("container__botao-desabilitado")) {
     botao.classList.remove("container__botao-desabilitado");
     botao.classList.add("container__botao");
+  } else {
+    botao.classList.remove("container__botao");
+    botao.classList.add("container__botao-desabilitado");
   }
 }
 
@@ -60,5 +63,5 @@ function reiniciar() {
   document.getElementById("resultado").innerHTML =
     '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>';
   alterarStatusBotao();
-  document.getElementById('btn-reiniciar').setAttribute('disabled', true);
+  document.getElementById("btn-reiniciar").setAttribute("disabled", true);
 }
