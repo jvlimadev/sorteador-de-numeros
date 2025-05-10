@@ -3,6 +3,10 @@
 Este projeto é um sorteador de números aleatórios **sem repetição**, feito com HTML, CSS e JavaScript.  
 O usuário informa um intervalo (ex: de 1 até 10) e a quantidade de números que deseja sortear.
 
+<p aling="center">
+  <img src="./img/projeto.png" alt="Página Inícial do projeto" width="500px">
+</p>
+
 ---
 
 ## ✅ Funcionalidades
